@@ -13,7 +13,7 @@
 
     <!-- <div id="music"><embed src="music.mp3" autostart='true' loop='true'></div> -->
     <!-- <audio autoplay loop src="music.mp3"></audio> -->
-    <audio controls autoplay>
+    <audio id=audio" controls autoplay>
         <source src="music.mp3" type="audio/mp3">
         <source src="music.org" type="audio/org">
     </audio>
@@ -90,9 +90,8 @@
 
 
     <script defer>
-
-
-        document.getElementById('button-stop').addEventListener('click', function () {
+        let audio = document.getElementById('audio');
+        audio.addEventListener('pause',  (e) => {
             document.querySelector('.mercury').style.animationPlayState = "paused";
             document.querySelector('.venus').style.animationPlayState = "paused";
             document.querySelector('.earth').style.animationPlayState = "paused";
@@ -104,25 +103,17 @@
             document.querySelector('.earth-inner').style.animationPlayState = "paused";
         })
 
-
-
-        document.getElementById('button-play').addEventListener('click', function () {
-            document.querySelector('.mercury').style.animationPlayState = "running";
-            document.querySelector('.venus').style.animationPlayState = "running";
-            document.querySelector('.earth').style.animationPlayState = "running";
-            document.querySelector('.mars').style.animationPlayState = "running";
-            document.querySelector('.jupiter').style.animationPlayState = "running";
-            document.querySelector('.saturn').style.animationPlayState = "running";
-            document.querySelector('.uranus').style.animationPlayState = "running";
-            document.querySelector('.neptune').style.animationPlayState = "running";
-            document.querySelector('.earth-inner').style.animationPlayState = "running";
+        audio.addEventListener('play', (e) => {
+            document.querySelector('.mercury').style.animationPlayState = "paused";
+            document.querySelector('.venus').style.animationPlayState = "paused";
+            document.querySelector('.earth').style.animationPlayState = "paused";
+            document.querySelector('.mars').style.animationPlayState = "paused";
+            document.querySelector('.jupiter').style.animationPlayState = "paused";
+            document.querySelector('.saturn').style.animationPlayState = "paused";
+            document.querySelector('.uranus').style.animationPlayState = "paused";
+            document.querySelector('.neptune').style.animationPlayState = "paused";
+            document.querySelector('.earth-inner').style.animationPlayState = "paused";
         })
-
-
-
-
-
-
     </script>
 
 
