@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <div id="music"><embed src="music.mp3" autostart='true' loop='true'></div> -->
+    <!-- <audio autoplay loop src="music.mp3"></audio> -->
+    <audio controls autoplay>
+        <source src="music.mp3" type="audio/mp3">
+        <source src="music.org" type="audio/org">
+    </audio>
+
+
+<div id="buttons">
+    <button id="button-stop" class="button">Stop</button>
+    <button id="button-play" class="button">Play</button>
+</div>
+
+
+    <div class="sun"></div>
+
+    <div class="mercury-outline">
+        <div class="mercury">
+            <p>Mercury &#8594;</p>
+        </div>
+    </div>
+
+    <div class="venus-outline-1">
+        <div class="venus">
+            <p>Venus &#8594;</p>
+        </div>
+    </div>
+
+    <div class="earth-outline-1">
+        <div class="earth">
+            <div class="earth-circle">
+                <div class="earth-inner"></div>
+                <p>Earth &#8594;</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mars-outline-1">
+        <div class="mars">
+            <p>Mars &#8594;</p>
+        </div>
+    </div>
+
+
+
+    <div class="jupiter-outline-1">
+        <div class="jupiter">
+            <p>Jupiter &#8594;</p>
+        </div>
+    </div>
+
+
+
+    <div class="saturn-outline-1">
+        <div class="saturn">
+            <p>Saturn &#8594;</p>
+        </div>
+    </div>
+
+
+    <div class="uranus-outline-1">
+        <div class="uranus">
+            <p>Uranus &#8594;</p>
+        </div>
+    </div>
+
+
+
+    <div class="neptune-outline-1">
+        <div class="neptune">
+            <p>Neptune &#8594;</p>
+        </div>
+    </div>
+
+
+
+    <script defer>
+
+
+        document.getElementById('button-stop').addEventListener('click', function () {
+            document.querySelector('.mercury').style.animationPlayState = "paused";
+            document.querySelector('.venus').style.animationPlayState = "paused";
+            document.querySelector('.earth').style.animationPlayState = "paused";
+            document.querySelector('.mars').style.animationPlayState = "paused";
+            document.querySelector('.jupiter').style.animationPlayState = "paused";
+            document.querySelector('.saturn').style.animationPlayState = "paused";
+            document.querySelector('.uranus').style.animationPlayState = "paused";
+            document.querySelector('.neptune').style.animationPlayState = "paused";
+            document.querySelector('.earth-inner').style.animationPlayState = "paused";
+        })
+
+
+
+        document.getElementById('button-play').addEventListener('click', function () {
+            document.querySelector('.mercury').style.animationPlayState = "running";
+            document.querySelector('.venus').style.animationPlayState = "running";
+            document.querySelector('.earth').style.animationPlayState = "running";
+            document.querySelector('.mars').style.animationPlayState = "running";
+            document.querySelector('.jupiter').style.animationPlayState = "running";
+            document.querySelector('.saturn').style.animationPlayState = "running";
+            document.querySelector('.uranus').style.animationPlayState = "running";
+            document.querySelector('.neptune').style.animationPlayState = "running";
+            document.querySelector('.earth-inner').style.animationPlayState = "running";
+        })
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
