@@ -1,29 +1,28 @@
+body ,
+html{
+    height: 100%;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background-image: url(./images/background.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
 }
 
-#buttons{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-top: 3px;
-}
 
-.button{
-    padding: 6px 20px 6px 20px;
-    background-color: greenyellow;
-    border: 1px  green solid;
-    border-radius: 10px;
-}
-
-audio{
+#play-pause{
+    padding: 8px 8px 8px 8px;
+    /* border: 1px black solid; */
+    /* border-radius: 50%; */
+    cursor: pointer;
     position: absolute;
+    color: rgb(195, 160, 8);
 }
+
 
 .sun {
     height: 100px;
@@ -36,6 +35,10 @@ audio{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
 .mercury {
