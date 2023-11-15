@@ -13,19 +13,9 @@
 
     <!-- <div id="music"><embed src="music.mp3" autostart='true' loop='true'></div> -->
     <!-- <audio autoplay loop src="music.mp3"></audio> -->
-    <audio controls autoplay>
-        <source src="music.mp3" type="audio/mp3">
-        <source src="music.org" type="audio/org">
-    </audio>
 
 
-<div id="buttons">
-    <button id="button-stop" class="button">Stop</button>
-    <button id="button-play" class="button">Play</button>
-</div>
-
-
-    <div class="sun"></div>
+    <div class="sun" id="play-pause"></div>
 
     <div class="mercury-outline">
         <div class="mercury">
@@ -101,7 +91,7 @@
         let pause = document.createTextNode('&#10074;&#10074;');
         
 
-        document.querySelector('.planet').style.animationPlayState = "paused";
+        document.querySelector('.mercury').style.animationPlayState = "paused";
         document.querySelector('.venus').style.animationPlayState = "paused";
         document.querySelector('.earth').style.animationPlayState = "paused";
         document.querySelector('.mars').style.animationPlayState = "paused";
